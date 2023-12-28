@@ -1,0 +1,6 @@
+(let [x 2]
+  (let [f (rec f (y)
+            (if (> y x)
+                (cons 4 (empty))
+                (cons 5 (cons 6 (app f (+ 1 y))))))]
+        (app f 2)))
